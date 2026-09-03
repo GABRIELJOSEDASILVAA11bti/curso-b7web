@@ -59,4 +59,12 @@ let cidade = "Sao Paulo"
 console.log(cidade)
  // esqueci de colocar console.log e de chamar a variavel.Se tiver no codigo, é pq ajustei.
 
+ 
 
+
+// CÁLCULO E EXIBIÇÃO DO NOVO SALÁRIO COM AUMENTO
+let salarioAtual = 2000;
+let aumento = 300;
+let novoSalario = salarioAtual + aumento
+
+console.log("Valore do novo salário é :",novoSalario)
