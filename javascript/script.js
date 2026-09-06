@@ -1,7 +1,5 @@
 
 
-
-
 alert("Olá,Mundo!") // serve para aparecer uma msg na tela principal do usuario
 
 console.log("Olá,Mundo!")// aparece apenas no console(que está no botão inspecionar),serveria pra verificar um tipo de conta por exemplo.
@@ -123,3 +121,71 @@ if(idadeDigitada === idadeMinima){
 
     console.log("Barrado no === porque um é número e o outro é texto!")
 }
+
+
+/**
+ * OPERADORES MULTI-CONDICIONAIS (RESUMO)
+ * 
+ * E (&&): Só dá TRUE se TODAS as condições forem verdadeiras.
+ * OU (||): Dá TRUE se pelo menos UMA condição for verdadeira.
+ * NÃO (!): Inverte o valor lógico (TRUE vira FALSE e vice-versa).
+ */
+
+
+// ========================================================
+// REVISÃO DO SEU EXERCÍCIO 1 (Operador &&)
+// ========================================================
+let rendaMinima = true;
+let nomelimpo = true;
+
+// 💡 O QUE VOCÊ FEZ: Criou a lógica 100% correta e funcional!
+// ❌ O QUE ERROU: Nada de lógica. Apenas escreveu "=== true", que funciona, mas é redundante.
+// 🔧 DICA: Pode usar o atalho deixando apenas: if (rendaMinima && nomelimpo)
+if(rendaMinima === true && nomelimpo === true){
+    console.log("Seu nome está limpo"); // (Apenas a mensagem poderia focar no "Empréstimo Aprovado")
+} else {
+    console.log("Seu nome não esta limpo");
+}
+
+
+// ========================================================
+// REVISÃO DO SEU EXERCÍCIO 2 (Operador ||)
+// ========================================================
+let estudante = false;
+let temCupom = true;
+
+// 💡 O QUE VOCÊ FEZ: Perfeito! Aplicou o atalho e usou o || corretamente.
+// ❌ O QUE ERROU: Absolutamente nada. Código limpo e padrão de mercado.
+if(estudante || temCupom){
+    console.log("Você tem direito a desconto!");
+} else {
+    console.log("Preço inteira.");
+}
+
+
+// ========================================================
+// REVISÃO DO SEU EXERCÍCIO 3 (Mistura de && e ||)
+// ========================================================
+let idadeMinima = 18;
+let convite = true;
+
+// 💡 O QUE VOCÊ FEZ: Entendeu bem que precisava usar o && e o || juntos.
+// ❌ O QUE ERROU: Deixou o operador "||" solto no final sem uma condição depois dele, 
+//    o que quebra o código (Erro de Sintaxe). Também esqueceu de agrupar o OU com parênteses ( ).
+// 🔧 CORREÇÃO: O certo seria: if (idadeMinima >= 18 && (convite || estaNaLista))
+if(idadeMinima >= 18 && convite ||) { // <-- Esse || no fim causou o erro
+    console.log("Permissão para entrar na festa");
+} else {
+    console.log("Entrada não permitida");
+}
+
+
+
+
+
+
+
+
+
+
+
